@@ -1,0 +1,110 @@
+.block-comments {
+    height: 900px;
+    // background: linear-gradient(#211f20 0%,#4c484a 70%, #646062 100%);
+    background-color: #000000;
+  }
+.text-h2-comments {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.com-description__img {
+    width: 10%;
+}
+
+.main-container {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .owl-carousel .owl-item img {
+    display: block;
+    width: auto !important;
+  }
+  
+  .comments_title {
+    padding-top: 64px;
+  }
+  
+  .com-description__img {
+    border-radius: 50%;
+    height: 120px;
+  }
+  
+  .owl-carousel {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  #slider_container {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .com-description {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    width: 1400px;
+    text-align: center;
+  }
+  
+  .com-description__text-bold {
+    font-family: "Museo Sans Cyrl 700";
+    font-size: 22px;
+    padding-top: 20px;
+    width: 100%;
+  }
+  
+  .com-description__text {
+    font-family: "Museo Sans Cyrl 300";
+    font-size: 16px;
+    padding-top: 5px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .main-comments__text {
+      @include flex-d-col();
+      align-items: center;
+  }
+  .primary-text {
+    color: #fff;
+    font-family: "Museo Sans Cyrl -100";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-top: 20px;
+    width: 89%;
+  }
+  
+  #slider_container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  

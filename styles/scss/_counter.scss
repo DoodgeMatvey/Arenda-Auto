@@ -1,0 +1,69 @@
+.block-counter {
+    height: 790px;
+    padding-bottom: 180px;
+}
+.block-counter__wrap {
+    @include flex-d-col();
+    align-items: center;
+}
+.counter-text {
+    font-family: "Proxima Nova";
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 98%;
+}
+.counter-text_bold {
+    font-family: "Proxima Nova - Black";
+    font-size: 50px;
+    color: #d27393;
+}
+.counter-text_indent {
+    padding: 20px 0;
+}
+.counter-main {
+    @include flex-d-row();
+    justify-content: space-between;
+    width: 98%;
+    padding-top: 100px;
+}
+.counter-main__item {
+    @include flex-d-col();
+    align-items: center;
+    text-align: center;
+    width: 32%;
+}
+.counter-main__sec-text {
+    font-size: 24px;
+}
+.counter-main__bold {
+    font-size: 24px;
+    font-family: "Proxima Nova - Black";
+    color: #d27393;
+    font-weight: 400;
+    padding-right: 20px;
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
+.counter-main__up {
+    padding-bottom: 20px;
+    @include flex-d-row();
+    justify-content: center;
+    align-items: center;
+}
+.counter-main__sec-text {
+    width: 89%;
+}
+.spincrement {
+    position: absolute;
+
+    color: white;
+    font-family: "Proxima Nova - Black";
+    font-size: 80px;
+}
+.spincrement-f {
+
+}
+.spincrement-s {
+
+}

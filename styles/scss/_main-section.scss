@@ -1,0 +1,108 @@
+#toTop {
+    width:100px;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom: 10px; /* отступ кнопки от нижнего края страницы*/
+    right:10px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:verdana;
+    font-size:11px;
+    } 
+.arrow-to-top {
+    width: 50px;
+}
+.block-main {
+    height: 80px;
+    background-color: #646062;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.block-main__wrap {
+    padding: 5px 30px 0 30px;
+    -ms-color: #ffff;
+    color: white;
+}
+.navbar-main {
+    width: 100%;
+    @include flex-d-row();
+    justify-content: space-between;
+    z-index: 999;
+    border-bottom: 2px solid white;
+}
+.navbar-toggler {
+    display: none;
+}
+.collapse {
+    display: block!important;
+    padding-top: 28px;
+    width: 50%;
+}
+.navbar-ul {
+    @include flex-d-row();
+    color: $text-color;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.nav-link {
+    color: $text-color;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-item:hover .nav-link{
+    color: $hover-color;
+    &:active {
+        color: $active-color;
+    }
+}
+.nav-item-lay:hover::after {
+    -webkit-margin-left: 0px;
+    margin-left: 35px;
+}
+.nav-item-contacts:hover::after {
+    margin-left: 12px;
+}
+.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%;
+}
+.navbar-block-fade {
+    display: none;
+    height: 30px;
+    width: 45px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+.navbar-block-fade__item {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+.block-cards_warranty-text {
+    font-size: 24px;
+    font-family: "Proxima Nova - Black";
+    color: #d27393;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.block-cards_warranty-text-visible {
+    display: none;
+}
+
+.logo {
+    height: 80px;
+    transform: scale(1);
+}
+

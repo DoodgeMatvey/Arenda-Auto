@@ -1,0 +1,24 @@
+.block-choise {
+    padding-bottom: 240px;
+}
+.block-choise__title {
+    padding-bottom: 75px;
+}
+.block-choise-first,.block-choise__sec {
+    width: 97%;
+    @include flex-d-row();
+    justify-content: space-between;
+}
+.block-choise-first__first {
+    width: 56%;
+}
+.block-choise-first__sec {
+    width: 40%;
+}
+.block-choise__sec {
+    
+    padding-top: 35px;
+}
+.block-choice__item-img-sec {
+    width: 32%;
+}

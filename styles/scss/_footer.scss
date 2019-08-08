@@ -1,0 +1,81 @@
+.block-footer {
+  // background-color: #666062;
+  background-color: #000000;
+}
+.block-footer-sec {
+  background-color: #211f20;  
+}
+.block-footer__wrap {
+  width: 97%;
+  @include flex-d-row();
+  padding-top: 20px;
+  color: white;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Proxima Nova T - Thin";
+  border-top: 2px solid white;
+}
+.logo-block {
+  color: #888b8a;
+  font-size: 18px;
+}
+.footer-nav {
+  @include flex-d-col();
+}
+
+
+.logo-footer-img {
+  width: 20%;
+}
+.nav-link__footer {
+  padding-bottom: 10px;
+  justify-content: flex-start;
+  text-transform: none;
+  font-size: 18px;
+  color: white;
+  &:hover {
+    border: 0;
+    color: $hover-color;
+    padding-bottom: 10px;
+  }
+}
+.image-icon {
+  height: 30px;
+}
+.footer-cards {
+  @include flex-d-col();
+  width: 18%;
+  padding-left: 155px;
+
+}
+.footer-card {
+  @include flex-d-row();
+  align-items: center;
+}
+
+.footer-card__text {
+  font-family: "Proxima Nova T - Thin";
+  padding-left: 15px;
+  font-size: 18px;
+}
+.footer-card_max {
+  font-size: 20px;
+}
+.block-end {
+  padding-left: 60px;
+}
+.footer-card-pad {
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+.button2__footer {
+  background-color: #0000;
+  border: solid 1px white;
+font-size: 18px;
+}
+
+.subscribe__image {
+  width: 47px;
+  height: 48px;
+  padding-right: 8px;
+}

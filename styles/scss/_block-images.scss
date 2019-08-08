@@ -1,0 +1,105 @@
+.block-images-cars {
+    padding-bottom: 100px;
+    padding-top: 120px;
+    background: linear-gradient(#141213 0%, #0c0b0c 100%);
+}
+.block-images__wrap {
+    border-bottom: 4px solid #141213;
+}
+.block-images-cars-main {
+    @include flex-d-row();
+    justify-content: space-between;
+    width: 98%;
+}
+.text-h2-images-cars {
+    padding-bottom: 60px;
+}   
+.block-images-gallery-main {
+    @include flex-d-col();
+    align-items: center;
+    width: 48%;
+}
+.block-one-img__item {
+    width: 100%;
+}
+.block-two-imgs {
+    @include flex-d-row();
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+}
+.block-two-img__item {
+    width: 48%;
+    height: 200px;
+}
+.block-two-imgs_indent-off {
+    padding-top: 0;
+    padding-bottom: 25px;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 550px;
+    background: url('../../img/599fef8fe610a_1200-0.jpg') center left no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+}
+.box-2 {
+    background: url('../../img/gen1200_330760219.jpg') no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 8, 31, 0.62);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.box:hover .hover-effect {
+    opacity: 1;
+}
+.box:hover .hover-text {
+    right: 0;
+}
+
+.hover-text {
+    position: absolute;
+    right: -100%;
+    bottom: 0;
+    display: block;
+    max-width: 100%;
+    padding: 100px 45px;
+    color: #e2e2e2;
+    text-decoration: none;
+    text-align: right;
+    line-height: 1.5em;
+    font-size: 15px;
+    font-family: "Proxima Nova";
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.box__title {
+    font-size: 2em;
+    font-weight: 500;
+    padding: 0.8em 0;
+    margin-bottom: 0.3em;
+    border-bottom: 1px solid #fff;
+}
+
+.box__sec {
+    width: 70%;
+    line-height: 1.7em;
+    display: inline-block;
+    text-align: right;
+}

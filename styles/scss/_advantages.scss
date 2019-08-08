@@ -1,0 +1,32 @@
+.block-advantages {
+    height: 800px;
+    background-color: #000000;
+    color: $text-color;
+}
+.block-advantages-main {
+    @include flex-d-row();
+    justify-content: center;
+    width: 100%;
+}
+.block-advantages-main__item {
+    @include flex-d-col();
+    align-items: center;
+    width: 32%;
+}
+.text-h2-advantages {
+    padding-bottom: 100px;
+}
+.block-advantages__img {
+    width: 30%;
+}
+.block-advantages-main__text {
+    padding-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.block-advantages-main__indent {
+    padding-top: 70px;
+}
+.block-advantages__img:hover {
+    -webkit-filter: contrast(155%);
+}

@@ -1,0 +1,32 @@
+.block-books {
+    padding-bottom: 140px;
+}
+.block-books-main {
+    @include flex-d-col();
+    align-items: center;
+    width: 98%;
+}
+.books__main-text {
+    padding: 30px 0;
+    width: 50%;
+    font-size: 18px;
+    text-align: center;
+}
+.books__text-bold {
+    font-family: "ProximaNova-Bold";
+    font-size: 18px;
+}
+.book-form {
+    @include flex-d-row();
+    align-items: center;
+}
+.book-form__email {
+    height: 30px;
+    margin-right: 20px;
+    padding-left: 5px;
+    width: 250px;
+}
+.book-form__button {
+    padding: 0px 60px;
+    font-size: 16px;
+}

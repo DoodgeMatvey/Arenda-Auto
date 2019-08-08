@@ -1,0 +1,197 @@
+.block-images {
+    padding-top: 60px;
+    background: linear-gradient(#211f20 0%, #141213 100%);
+}
+.block-images-main {
+    @include flex-d-col();
+    align-items: center;
+    text-align: center;
+    padding-bottom: 150px;
+}
+.images {
+    @include flex-d-row();
+    justify-content: space-between;
+    width: 100%;
+}
+.text-h2-images {
+   padding-bottom: 80px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper__title {
+    color: #fff;
+    padding-bottom: 20px;
+}
+.card {
+    width: 380px;
+    height: 300px;
+    position: relative;
+    margin-right: 30px;
+}
+.card__indent-off {
+    margin-right: 0;
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    background-color: #ededed;
+}
+.front img {
+    max-width: 101%;
+    min-height: 100%;
+    zoom: 0.5;
+}
+.back {
+    @include flex-d-col();
+    align-items: center;
+    justify-content: flex-start;
+    transform: rotateY(180deg);
+}
+.back a {
+    font-size: 12px;
+    line-height: 17px;
+}
+.back__title {
+    padding-bottom: 10px;
+    font-size: 16px;
+    width: 97%;
+}
+.back__span {
+    width: 97%;
+}
+.button2__link {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px 30px;
+    border: 1px solid black;
+    background: #211f20;
+    color: white;
+    &:hover {
+        -webkit-box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.11);
+        -moz-box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.11);
+        box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.11);
+        background-color: #4286f4;
+        -moz-background-color: #4286f4;
+        -moz-transition: background-color 0.2s linear;
+        transition: background-color 0.2s linear;
+        color: $text-color;
+    }
+    &:active {
+        -moz-background-color: $active-color;
+        background-color: $active-color;
+    }
+}
+.back__span {
+    font-size: 12px;
+}
+.back-img {
+    height: 50px;
+    padding: 15px 0;
+}
+.card:hover .front {
+    transform: rotateY(180deg);}
+.card:hover .back {
+    transform: rotateY(360deg);}
+
+
+
+
+
+
+
+#slider {
+    height: 40vw;
+    max-height: 480px;
+    width: 60%;
+    @include flex-d-col();
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0; right: 0;
+cursor: pointer;
+    transition: transform 0.4s ease;
+}
+.slider__buttons {
+    display: none;
+}
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(-30%,0,-200px);
+    -ms-transform: translate3d(-30%,0,-200px);
+    -moz-transform: translate3d(-30%,0,-200px);
+    -webkit-transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-15%,0,-100px);
+    -ms-transform: translate3d(-15%,0,-100px);
+    -moz-transform: translate3d(-15%,0,-100px);
+    -webkit-transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(15%,0,-100px);
+    -ms-transform: translate3d(15%,0,-100px);
+    -moz-transform: translate3d(15%,0,-100px);
+    -webkit-transform: translate3d(15%,0,-100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(30%,0,-200px);
+    transform: translate3d(30%,0,-200px);
+    transform: translate3d(30%,0,-200px);
+    -webkit-transform: translate3d(30%,0,-200px);
+}
+
+#slide1 { background-image: url("../../img/1920x.jpg" );
+        background-size: 100% 100%; }
+#slide2 { background-image: url("../../img/Vision-Mercedes-Maybach-6-Cabriolet-1.jpg" );
+        background-size: 100% 100%; }
+#slide3 {  background-image: url("../../img/Mercedes-Benz-AMG_GT_C_Edition_50-2018-1600-01.jpg" );
+        background-size: 100% 100%; }
+#slide4 { background-image: url("../../img/p1753573-1521190239.jpg" );
+        background-size: 100% 100%;  }
+#slide5 {  background-image: url("../../img/51921-kupit-kupe-mercedes-benz-c-class-180-amg-odessa-2016-19.jpg" );
+        background-size: 100% 100%;  }

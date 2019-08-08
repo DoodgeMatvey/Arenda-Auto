@@ -1,0 +1,95 @@
+.block-about {
+    width: 100%;
+    padding-bottom: 70px;
+    background: linear-gradient( #646062 0%, #211f20 100%);
+    // #4f4b4d
+}
+.block-about__wrap {
+    text-align: center;
+    @include flex-d-col();
+    align-items: center;
+}
+.text-h2_about {
+    padding-top: 200px;
+    padding-bottom: 80px;
+    width: 100%;
+    font-size: 40px;
+    color: #fafafa;
+}
+.text-h2_about-bold {
+    color: $hover-color;
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+.text-h2_about-sec {
+    padding-top: 80px;
+    padding-bottom: 0;
+}
+.text-secondary-about {
+    font-size: 18px;
+    padding-top: 30px;
+    color: #c1c1c1;
+    align-self: flex-start;
+}
+.text-secondary-about__indent {
+    padding-top: 44px;
+}
+.block-about-main {
+    @include flex-d-row();
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+}
+.block-about__text {
+    width: 50%;
+}
+.contact-form-main {
+    width: 30%;
+    padding-top: 40px;
+    color: $text-color;
+}
+.contact-form-main__title {
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+.contact-form {
+    @include flex-d-col();
+    align-self: center;
+    
+}
+.contact-form__item {
+    margin-bottom: 20px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 0px;
+}
+.contact-form__label {
+    padding-bottom: 10px;
+    text-align: left;
+}
+.contact-form__item-message {
+    height: 70px;
+}
+.contact-form__button {
+    height: 30px;
+    background-color: #fff;
+    color: black;
+    border: #fff;
+    width: 30%;
+    outline: none;
+    &:hover {
+        background-color: #2d88af;
+        color: $text-color;
+        transition: all 0.25s linear;
+        cursor: pointer;
+    }
+    &:active {
+        background-color: $active-color;
+        color: $text-color;
+    }
+}
+.block-about__img {
+    width: 50%;
+    align-self: flex-end;
+    
+}

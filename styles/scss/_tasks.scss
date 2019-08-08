@@ -1,0 +1,89 @@
+.block-tasks {
+    padding-bottom: 230px;
+}
+.block-tasks__wrap {
+    @include flex-d-col();
+    align-items: center;
+    text-align: center;
+}
+.block-tasks__titles {
+    @include flex-d-row();
+    justify-content: space-around;
+}
+.tasks-blocks__item {
+    border-radius: 30px;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.11);
+    padding-top: 10px;
+}
+
+.block-tasks__title {
+    width: 35%;
+    font-size: 24px;
+    font-family: "Proxima Nova - Black";
+}
+.block-tasks__sec-text {
+    font-size: 24px;
+    font-family: "Proxima Nova T - Thin";
+    padding-top: 10px;
+}
+.taks-italic-text {
+    font-size: 40px;
+    color: #d27393;
+    font-family: "Good Vibes Pro Regular";
+}
+.text-yes-no {
+    font-size: 20px;
+    color: #d27393;
+    font-family: "Good Vibes Pro Regular";
+    word-spacing: 15px;
+    padding-top: 5px;
+}
+.taks-blocks-ul__item {
+    text-align: left;
+    width: 92%;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.taks-blocks-ul__item-sec {
+    padding-bottom: 15px;
+}
+.taks-blocks-ul__item-third {
+    padding-bottom: 18px;
+}
+
+.text-yes-no-sec {
+    padding-top: 20px;
+}
+.tasks-blocks {
+    width: 98%;
+    @include flex-d-row();
+    justify-content: space-between;
+
+}
+.tasks-blocks__item_first {
+    background-color: #fbdee0;
+}
+.tasks-blocks__item_sec {
+    background-color: #e0e0e0;
+}
+.tasks-blocks__item {
+    width: 49%;
+}
+.text-yes-no {
+    text-align: center;
+}
+.task-end-text {
+    font-family: "Proxima Nova T - Thin";
+    font-size: 18px;
+    padding-top: 40px;
+    width: 57%;
+    font-weight: 600;
+}
+.task-end-text__font {
+    font-family: "Proxima Nova";
+}
+.task-end-text-italic {
+    font-family: "Good Vibes Pro Regular";
+    color: #d27393;
+    font-size: 35px;
+}

@@ -1,0 +1,77 @@
+.block-courses {
+    height: 1390px;
+    background-image: url('../../img/pink-bg.png');
+    background-repeat: no-repeat;
+    background-size: 145% 100%;
+    background-position: center;
+}
+.courses-three-blocks {
+    @include flex-d-row();
+    justify-content: space-between;
+    padding-top: 190px;
+    text-align: center;
+    width: 98%;
+}
+.corses-three-blocks__item {
+    width: 32.3%;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.11);
+}
+.courses-three-blocks__ul {
+    text-align: left;
+    padding-left: 34px;
+}
+.courses-title {
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.courses-sec {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.courses-three-blocks__item {
+    padding-bottom: 5px;
+    color: #f6b9d2;
+    font-size: 25px;
+    text-indent: -5px;
+}
+.courses-ul-text {
+    font-size: 18px;
+    color: #000000;
+}
+.courses-cost {
+    font-family: "ProximaNova-Bold";
+    font-size: 24px;
+}
+.courses-cost_first {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.courses-cost_sec {
+    padding-top: 175px;
+}
+.courses-cost_third {
+    padding-top: 5px;
+}
+.courses-cost_fourth {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.courses-butt {
+    padding: 15px 50px;
+    margin-bottom: 40px;
+}
+
+.courses-butt_indent {
+    margin-top: 20px;
+}
+.courses-three-blocks_second {
+    padding-top: 30px;
+}
+.two {
+    width: 49%;
+}
